@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Contacts.iml" filepath="$PROJECT_DIR$/.idea/modules/Contacts.iml" group="Contacts" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Contacts/task/Contacts-task.iml" filepath="$PROJECT_DIR$/.idea/modules/Contacts/task/Contacts-task.iml" group="Contacts/Contacts-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Contacts/task/Contacts-task_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Contacts/task/Contacts-task_main.iml" group="Contacts/Contacts-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Contacts/task/Contacts-task_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Contacts/task/Contacts-task_test.iml" group="Contacts/Contacts-task" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Binary search/Problems-Binary_search.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Binary search/Problems-Binary_search.iml" group="Contacts/Problems-Binary_search" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Binary search/Problems-Binary_search_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Binary search/Problems-Binary_search_main.iml" group="Contacts/Problems-Binary_search" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Binary search/Problems-Binary_search_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Binary search/Problems-Binary_search_test.iml" group="Contacts/Problems-Binary_search" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Creating instances/Problems-Creating_instances.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Creating instances/Problems-Creating_instances.iml" group="Contacts/Problems-Creating_instances" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Creating instances/Problems-Creating_instances_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Creating instances/Problems-Creating_instances_main.iml" group="Contacts/Problems-Creating_instances" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Creating instances/Problems-Creating_instances_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Creating instances/Problems-Creating_instances_test.iml" group="Contacts/Problems-Creating_instances" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Sorting arrays/Problems-Sorting_arrays.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Sorting arrays/Problems-Sorting_arrays.iml" group="Contacts/Problems-Sorting_arrays" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Sorting arrays/Problems-Sorting_arrays_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Sorting arrays/Problems-Sorting_arrays_main.iml" group="Contacts/Problems-Sorting_arrays" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/Sorting arrays/Problems-Sorting_arrays_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/Sorting arrays/Problems-Sorting_arrays_test.iml" group="Contacts/Problems-Sorting_arrays" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/The integer barrier/Problems-The_integer_barrier.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/The integer barrier/Problems-The_integer_barrier.iml" group="Contacts/Problems-The_integer_barrier" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/The integer barrier/Problems-The_integer_barrier_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/The integer barrier/Problems-The_integer_barrier_main.iml" group="Contacts/Problems-The_integer_barrier" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/The integer barrier/Problems-The_integer_barrier_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/The integer barrier/Problems-The_integer_barrier_test.iml" group="Contacts/Problems-The_integer_barrier" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util.iml" group="Contacts/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_main.iml" group="Contacts/util" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/util_test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/util_test.iml" group="Contacts/util" />
+    </modules>
+  </component>
+</project>
