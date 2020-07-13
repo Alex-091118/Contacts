@@ -4,46 +4,79 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-class Contact {
-    String name;
-    String surname;
-    private String phoneNumber;
+public class Contact {
+	
+	private String name;
+	private String surname;
+	private String phoneNumber;
+	private Scanner scanner = new Scanner(System.in);
+	
+	public Contact() {
+		
+		setName();
+		setSurname();
+		setPhoneNumber();
+		
+		System.out.println("The record added.");
+	}
 
-    public Contact() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the name of the person:");
-        this.name = scanner.nextLine();
-        System.out.println("Enter the surname of the person:");
-        this.surname = scanner.nextLine();
-        System.out.println("Enter the number:");
-        this.phoneNumber = scanner.nextLine();
-        System.out.println();
-        System.out.println("A record created!\n" +
-                "A Phone Book with a single record created!");
-    }
+	@Override
+	public String toString() {
+		return name + " " + surname + ", " + phoneNumber + "\n";
+	}
 
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public void setPhoneNumber(String phoneNumber) {
-//        Pattern pattern = Pattern.compile(
-//                "([+]?\\(?(\\w+)\\)?[-\\s]?\\(?\\w{2,}\\)?[-\\s]?(\\w{2,}[-\\s]?)*)");
-        Pattern pattern = Pattern.compile(
-                "([+]?\\(?(\\w+)\\)?[-\\s]?\\w{2,}[-\\s]?(\\w{2,}[-\\s]?)*)" +
-                        "|([+]?(\\w+)[-\\s]?\\(?\\w{2,}\\)?[-\\s]?(\\w{2,}[-\\s]?)*)" +
-                        "|([+]?(\\w+)[-\\s]?\\w{2,}[-\\s]?(\\w{2,}[-\\s]?)*)");
-        Matcher matcher = pattern.matcher(phoneNumber);
-        boolean check = matcher.matches();
-        if (check) {
-            this.phoneNumber = phoneNumber;
-        } else {
-            System.out.println("Wrong number format");
-        }
+	public String getSurname() {
+		return surname;
+	}
+	
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
 
-    }
+	public void setName() {
+		System.out.println("Enter the name of the person:");
+		this.name = scanner.nextLine();
+	}
 
-    public static void main(String[] args) {
+	public void setSurname() {
+		System.out.println("Enter the surname of the person:");
+		this.surname = scanner.nextLine();
+	}
 
-    }
+	public void setPhoneNumber() {
+		System.out.println("Enter the number:");
+		String phoneNumber = scanner.nextLine();
+		if (checkPhoneNumber(phoneNumber)) {
+			this.phoneNumber = phoneNumber;
+		} else {
+			this.phoneNumber = "[no number]";
+		}
+	}
+	boolean hasNumber() {
+		if ("[no number]".equals(phoneNumber)) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+	private boolean checkPhoneNumber(String phoneNumber) {
+//      Pattern pattern = Pattern.compile(
+//      "([+]?\\(?(\\w+)\\)?[-\\s]?\\(?\\w{2,}\\)?[-\\s]?(\\w{2,}[-\\s]?)*)");
+		Pattern pattern = Pattern.compile("([+]?(\\(\\w+\\)[-\\s]?)(\\w{2,}[-\\s]?)*)"
+				+ "|([+]?(\\w+[-\\s])\\(\\w{2,}\\)[-\\s]?(\\w{2,}[-\\s]?)*)"
+				+ "|([+]?(\\w)?[-\\s]?(\\w{2,}[-\\s]?)*)");
+		Matcher matcher = pattern.matcher(phoneNumber);
+		if (matcher.matches()) {
+			return true;
+		} else {
+			System.out.println("Wrong number format");
+			return false;
+		}
+	}
+
 }
