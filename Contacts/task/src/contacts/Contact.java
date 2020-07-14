@@ -1,50 +1,33 @@
 package contacts;
 
+import java.time.LocalDateTime;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Contact {
-	
-	private String name;
-	private String surname;
+
+	protected Scanner scanner = new Scanner(System.in);
 	private String phoneNumber;
-	private Scanner scanner = new Scanner(System.in);
-	
+	Type type;
+	boolean isPerson;
+	LocalDateTime timeCreated;
+	LocalDateTime timeLastEdit;
+
 	public Contact() {
-		
-		setName();
-		setSurname();
-		setPhoneNumber();
-		
-		System.out.println("The record added.");
+		timeCreated = LocalDateTime.now();
+		timeLastEdit = timeCreated;
 	}
 
-	@Override
-	public String toString() {
-		return name + " " + surname + ", " + phoneNumber + "\n";
+	String info() {
+		String info = "Number: " + phoneNumber + "\n" + "Time created: " + timeCreated + "\n" + "Time last edit: "
+				+ timeLastEdit + "\n";
+		return info;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public String getSurname() {
-		return surname;
-	}
-	
 	public String getPhoneNumber() {
+
 		return phoneNumber;
-	}
-
-	public void setName() {
-		System.out.println("Enter the name of the person:");
-		this.name = scanner.nextLine();
-	}
-
-	public void setSurname() {
-		System.out.println("Enter the surname of the person:");
-		this.surname = scanner.nextLine();
 	}
 
 	public void setPhoneNumber() {
@@ -56,6 +39,7 @@ public class Contact {
 			this.phoneNumber = "[no number]";
 		}
 	}
+
 	boolean hasNumber() {
 		if ("[no number]".equals(phoneNumber)) {
 			return false;
@@ -65,11 +49,8 @@ public class Contact {
 	}
 
 	private boolean checkPhoneNumber(String phoneNumber) {
-//      Pattern pattern = Pattern.compile(
-//      "([+]?\\(?(\\w+)\\)?[-\\s]?\\(?\\w{2,}\\)?[-\\s]?(\\w{2,}[-\\s]?)*)");
 		Pattern pattern = Pattern.compile("([+]?(\\(\\w+\\)[-\\s]?)(\\w{2,}[-\\s]?)*)"
-				+ "|([+]?(\\w+[-\\s])\\(\\w{2,}\\)[-\\s]?(\\w{2,}[-\\s]?)*)"
-				+ "|([+]?(\\w)?[-\\s]?(\\w{2,}[-\\s]?)*)");
+				+ "|([+]?(\\w+[-\\s])\\(\\w{2,}\\)[-\\s]?(\\w{2,}[-\\s]?)*)" + "|([+]?(\\w)?[-\\s]?(\\w{2,}[-\\s]?)*)");
 		Matcher matcher = pattern.matcher(phoneNumber);
 		if (matcher.matches()) {
 			return true;

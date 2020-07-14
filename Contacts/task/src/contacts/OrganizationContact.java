@@ -34,11 +34,11 @@ public class OrganizationContact extends Contact {
 
 	@Override
 	public String toString() {
-		return nameOfOrganization + "\n";
+		return nameOfOrganization;
 	}
 	
 	String info() {
-		String info = "Oranisation name: " + nameOfOrganization + "\n"
+		String info = "Organization name: " + nameOfOrganization + "\n"
 				+ "Address: " + address + "\n" + 
 				super.info();
 		return info;

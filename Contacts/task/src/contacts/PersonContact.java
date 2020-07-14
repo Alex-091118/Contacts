@@ -74,7 +74,7 @@ public class PersonContact extends Contact {
 
 	@Override
 	public String toString() {
-		return name + " " + surname + "\n";
+		return name + " " + surname;
 	}
 
 	String info() {
