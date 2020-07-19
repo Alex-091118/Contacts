@@ -34,6 +34,7 @@
             <option value="$PROJECT_DIR$/Problems/Getting the fullname" />
             <option value="$PROJECT_DIR$/Problems/Illegal identifiers" />
             <option value="$PROJECT_DIR$/Problems/In the middle of a word" />
+            <option value="$PROJECT_DIR$/Problems/IntBinaryOperation" />
             <option value="$PROJECT_DIR$/Problems/Mutable geometric shapes" />
             <option value="$PROJECT_DIR$/Problems/Number parsing" />
             <option value="$PROJECT_DIR$/Problems/Overloading methods" />
@@ -45,14 +46,19 @@
             <option value="$PROJECT_DIR$/Problems/Publications" />
             <option value="$PROJECT_DIR$/Problems/Robot Builder" />
             <option value="$PROJECT_DIR$/Problems/Safe password" />
+            <option value="$PROJECT_DIR$/Problems/Shape hierarchy" />
             <option value="$PROJECT_DIR$/Problems/Shapes area" />
+            <option value="$PROJECT_DIR$/Problems/Sort out the classes" />
             <option value="$PROJECT_DIR$/Problems/Sorting arrays" />
             <option value="$PROJECT_DIR$/Problems/Start or end of a word" />
             <option value="$PROJECT_DIR$/Problems/Start sequence of words" />
             <option value="$PROJECT_DIR$/Problems/Subway Sandwich" />
+            <option value="$PROJECT_DIR$/Problems/Sum of the areas" />
             <option value="$PROJECT_DIR$/Problems/The integer barrier" />
             <option value="$PROJECT_DIR$/Problems/Time" />
+            <option value="$PROJECT_DIR$/Problems/Users and WebSites" />
             <option value="$PROJECT_DIR$/Problems/Vehicle registration number" />
+            <option value="$PROJECT_DIR$/Problems/Who is who" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>
